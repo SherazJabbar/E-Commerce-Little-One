@@ -9,6 +9,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
+  console.log(userInfo);
 
   const logoutHandler = () => {
     dispatch(logout());
@@ -20,9 +21,9 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <span className="p-2">
+              {/* <span className="p-2">
                 <img src="images/logo.jpg" alt="img" className="img-logo"></img>
-              </span>
+              </span> */}
               Little One
             </Navbar.Brand>
           </LinkContainer>
