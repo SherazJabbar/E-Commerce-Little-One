@@ -14,6 +14,7 @@ const RegisterScreen = () => {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+
   const [message, setMessage] = useState(null);
 
   const redirect = location.search ? location.search.split("=")[1] : "/";
